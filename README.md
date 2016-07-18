@@ -1,1 +1,2 @@
 # CustomAlertView
+  这是一个自定义的AlertView，它的结构与UIAlertView类似。中间为一块自定义的view，创建时传递自定义的View就可以显示
