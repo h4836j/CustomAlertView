@@ -162,6 +162,24 @@
     return alert;
 }
 
+- (void)setMsgHeight:(CGFloat)msgHeight
+{
+    _msgHeight = msgHeight;
+    self.alertHeight = self.msgHeight + self.titleHeigh + self.chooseHeigh;
+}
+
+- (void)setTitleHeigh:(CGFloat)titleHeigh
+{
+    _titleHeigh = titleHeigh;
+    self.alertHeight = self.msgHeight + self.titleHeigh + self.chooseHeigh;
+}
+
+- (void)setChooseHeigh:(CGFloat)chooseHeigh
+{
+    _chooseHeigh = chooseHeigh;
+    self.alertHeight = self.msgHeight + self.titleHeigh + self.chooseHeigh;
+}
+
 // 按钮点击事件
 - (void)buttonClink:(UIButton *)btn
 {
